@@ -6,7 +6,22 @@
   </head>
   <body>
     <h1>About Me</h1>
-    <p>Things about Gabriela</p>
+
+    <h2>My skills include</h2>
+    <ul>
+      <% @skills.each do |skill| %>
+      <li> <%= skill %> </li>
+      <% end %>
+
+    </ul>
+    
+    <h2>Interests</h2>
+<ul>
+  <% @interests.each do |interest| %>
+    <li> <%= interest %> </li>
+  <% end %>
+</ul>
+
 
   </body>
 </html>
